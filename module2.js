@@ -1,5 +1,6 @@
 /*
-* Till now we discussed about some of the common basics of the JavaScript, in this module we will further continue ahead learning about other functions and features of the JavaScript.
+* Till now we discussed about some of the common basics of the JavaScript, 
+* in this module we will further continue ahead learning about other functions and features of the JavaScript.
 * In all the languages we know of there are mainly 3 types of loops, but that's not the case for JavaScript.
 * In JavaScript we have 5 types of loops:
 > For
