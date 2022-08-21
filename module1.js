@@ -217,3 +217,4 @@ employee.inputid();
 employee.inputcourses();
 
 console.log(employee);
+console.table(employee);
