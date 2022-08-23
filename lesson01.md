@@ -69,4 +69,79 @@
 - JavaScript objects are collection of data and functionality stored as properties and methods that describe the object and what it can do.
 
 ## Object Containers
-- Objects are typically constants
+- Objects are typically constants, we can change the properties of the object inside the container. We can't remove or replace the object from the container.
+
+## Object Properties
+- Properties are the properties of object.
+- They describe different aspects of the object.
+- Obejct properties are defined using solon seprated name value pair.
+
+## Object Blueprints or Templates (using classes)
+- Let's see how to create a class in JavaScript. The below is just a generalised version of a class with an example.
+```javascript
+    class class_name{
+        constructor(
+            // Define parameters
+            parameter1,
+            parameter2,
+            paramater3,
+            .
+            .
+            .
+            parametern,
+        )
+        {
+            // Define Properties
+            this.parameter1 = parameter1;
+            this.parameter2 = parameter2;
+            .
+            .
+            .
+            this.paramatern = parametern;
+            this.miniobject = {
+                miniobj_parameter1: parameter4,
+                miniobj_parameter2: parameter5,
+            };
+        }
+        // Add methods like normal functions
+        insertvalue(parametern)
+            {
+                this.parametern = parametern;
+            }
+    }
+
+    // Example:
+    class employee{
+        constructor(
+            // Define parameters
+            name,
+            age,
+            company,
+            ssoid,
+            password
+        )
+        {
+            // Define Properties
+            this.name = name;
+            this.age = age;
+            this.company = company;
+            this.credentials = {
+                id: ssoid,
+                pass: password
+            };
+        }
+        // Add methods like normal functions
+        insertvalue()
+            {
+                this.name = prompt("Enter your name:");
+                this.age = parseInt(prompt("Enter age:"));
+                this.company= prompt("Enter Company name");
+                this.ssoid= prompt("Enter SSO ID");
+            }
+        showvalue()
+            {
+                console.log("USERNAME: "+this.name+ssoid+companyname);
+                console.log
+            }
+    }
+```
