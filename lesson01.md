@@ -122,7 +122,7 @@
         )
         {
             // Define Properties
-            this.name = name;
+            this.name = name;S
             this.age = age;
             this.company = company;
             this.credentials = {
