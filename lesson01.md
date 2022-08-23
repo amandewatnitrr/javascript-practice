@@ -55,4 +55,18 @@
     <script type="module" src="../js/exporting_js_filename.js"></script>
     <script type="module" src="../js/importing_js_filename.js"></script>
 ```
-- The object sent from the exporting_js_file to importing_js_file can't be accessed as it's out of the scope of the importing_js_file
+- The object sent from the exporting_js_file to importing_js_file can't be accessed as it's out of the scope of the importing_js_file.
+
+# Objects: A Practical Introduction
+- JavaScript is a prototype based Object Oriented Programming Language.
+- That means, at it's cores, when we work with JavaScript, we're working with objects that are based on prototypes.
+- Each object is a unique instance of an object prototype.
+- The particular combination and configuration of these properties define each individual object.
+- These properties describe the prototype of an object.
+- Objects have features that allow us to change there property values.
+- The property changing features inside an object are called methods.
+
+- JavaScript objects are collection of data and functionality stored as properties and methods that describe the object and what it can do.
+
+## Object Containers
+- Objects are typically constants
