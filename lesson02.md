@@ -83,5 +83,42 @@ querySelectorAll(main element_name);
         ```
     - Always prefer using `classList` instead of using `className`.
 
+## Attributes
+
+- JavaScript can be used to modify the attributes of the elements.
+- The attributes are stored in the `attributes` property, it can be accessed directly by calling it.
+- The `attributes` property returns a different type of data from the className and classList properties.
+- It returns a live collection of attribute nodes registered to the specified node. It is a `NamedNodeMap` and is not an array. It has no array methods.
+- An attribute is a more complex form of data, it has a key and a value and we need to be able to manipulate just the key or just the value or both at any time and a simple array won't do that.
+```javascript
+  var detailed_attributes = document.getElementById("Id").attributes;
+  // returns all the attributes associated with the element
+```
+- So, mainly we have 4 variations of functions associated with attributes:
+  - `hasAttribute`
+    - returns a boolean value indicating whether the current element has the specified attribute or not.
+    - ```javascript
+        var a = document.getElementById("Id").hasAttribute("attribute");
+        // the function above looks for the mentioned attribute in the given element and returns true or false.
+      ```
+  - `getAttribute`
+    - returns the value of specifed attribute on the element.
+    -  ```javascript
+        var a = document.getElementById("Id").getAttribute("attribute");
+        // the function above looks for the mentioned attribute in the given element and returns the details associated with that attribute for that element.
+      ```
+  - `setAttribute`
+    - Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+    -  ```javascript
+        var a = document.getElementById("Id").setAttribute("attribute-name", value);
+        // the function above looks for the mentioned attribute in the given element and than creates a new attribute with that name and assigns it value, if it doesn't pre-exist and if it does exist it updates it..
+      ```
+  - `removeAttribute`
+    - removes the attribute with the specified name from the element.
+    -  ```javascript
+        var a = document.getElementById("Id").removeAttribute("attribute-name");
+        // the function above looks for the mentioned attribute in the given element and removes it.
+      ```
+
 </strong>
 </p>
