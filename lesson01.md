@@ -1,5 +1,6 @@
 # Getting Started with JavaScript
-
+<p align="justify">
+<strong>
 - Before going through this section, you are recommended to go through the notes given in module1.js and module2.js.
 - Don't worry about test.js file, it's just for testing purpose.
 
@@ -212,3 +213,5 @@ var content = `
 
 document.body.innerHTML = content;
 ```
+</p>
+</strong>
