@@ -31,12 +31,19 @@ querySelectorAll(main element_name);
 
 - `getElementById`
   - returns an element object representing the element whose ID property matches the specified string. Element IDs need to be unique if specified, they are a useful way to get access to specific element quickly.
+  - ```javascript
+        // returns the element with the specified ID property whoever is found first.
+        var ele =  document.getElementById(id); 
+    ```
   
 - `getElementsByClassName`
   - returns a live `HTMLCollection` which contains every descendant element which has the specified class names.
   - returns an array like object of all the nodes or child elements matching the query.
   - The query is a string of space seprated class names 
-
+  - ```javascript
+        // returns all the elements of the specified class name as an array or node list
+        var ele =  document.getElementsByClassName(names); 
+    ```
 - The querySelector and querySelectorAll method overcome the shortcomings of the older methods.
 
 ## Modifying Element Classes
