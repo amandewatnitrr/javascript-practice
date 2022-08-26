@@ -120,5 +120,70 @@ querySelectorAll(main element_name);
         // the function above looks for the mentioned attribute in the given element and removes it.
       ```
 
+## Inline Style
+
+- If an element has inline-style, meaning there are CSS decorations in the element itself that inline css is stored in the style properties of the elements, and we can acccess it as a regular property.
+```javascript
+  var css_property = document.querySelector(".class-name").style;
+  // The above function returns all the css style declaration object associated with the element.
+  document.querySelector(".class-name").style.style_property_name = value;
+  // adds style to that particular element with the value specified.
+```
+
+## Adding DOM Elements
+
+### `createElement`
+
+- `createElement` createsthe HTML element specified by tagName or an `HTMLUnknownElement` if tag name isn't recognised.
+- DOM Manipulation like this is an essential part of JavaScript.
+- ```javascript
+    createElement(tagName);
+    createElement(tagName, options);
+  ```
+
+### `appned`
+
+- `ParentNode.append("newNodename")` method inserts a set of `Node` objects or `DOMString` objects after the last child of `ParentNode`.
+- `DOMString` objects are inserted as equivalent `Text` nodes.
+
+- `Node.appendChild("newNodename")` method insertsonly accepts `Node` objects.
+- `ParentNode.append("newNodename")` has no return value, while `Node.appendChild("newNodename")` returns the appended `Node` object.
+
+## Array
+
+- Just like all other programming languages we have Arrays in JavaScript as well.
+- The Indexing of arrays in js as well starts with 0.
+
+```javascript
+  var arrayname = [];
+  // Above array is an empty array.
+  var size = parseInt(prompt("Enter no. of elements in array"));
+  // Taking input of array size.
+  
+  for(var i=0;i<size;i++)
+    {
+      // Generating a prompt to take input for each element of array.
+      let element = prompt("Enter value at "+i+" index.");
+      // Pushing the element to the array
+      arrayname.push(element);
+    }
+
+  console.log(arrayname.join(", "));
+  // The above join() function adds seperator mentioned b/w each element.
+  console.log(arrayname.length);
+
+  arrayname[arrayname.length] = "value";
+  // Pushes the given value as the last element in the array.
+```
+
+- `arrayname.push(value)`
+  - Adds the element at the end of the array.
+- `arrayname.pop()`
+  - removes the element from the end of the array.
+- `arrayname.unshift(value)`
+  - adds the element with specified value from the left side of the array.
+- `arrayname.shift()`
+  - removes the element from the 0th index of the array.
+
 </strong>
 </p>
