@@ -125,5 +125,39 @@
 
 ## Looping through the content
 
+- Let's now see ghow can we practically implement loops while working with `DOM` Elements.
+```javascript
+
+    const main = document.querySelector("body");
+    list = document.createElement("ul");
+
+    for(var i=0; i<5;i++)
+        {
+            var list_element = document.createElement("li");
+            list_element.innerHTML = i;
+            list.append(list_element);
+        }
+    main.append(list);
+
+```
+
+## Events in JavaScript
+
+- Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them.
+- Let's learn how to detect an event and trigeer a response to that event using javascript.
+
+```javascript
+    const target_element = document.querySelector("element");
+
+    target_element.eventListener("activity",(e) => {
+        /*
+            Statements. This is a function.
+        */
+    }, options);
+    /* 
+        There's a option object for more control. It's a rarely used advanced feature that' rarely used.
+    */
+```
+
 </strong>
 </p>
